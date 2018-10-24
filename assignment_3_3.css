@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 7.5vw 5vw;
+}
+h1, p {
+    font-family: 'Oswald', sans-serif;
+}
+h1, p:first-child {
+    position: absolute;
+    font-weight: 400;
+    color: #ffb4a8;
+}
+h1 {
+    font-size: 12vw;
+    letter-spacing: -0.5vw;
+    top: 24%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffb4a8;
+}
+p:first-child {
+    top: 24%;
+    left: 34.5%;
+    font-size: 3vw;
+    font-weight: 500;
+}
+.text {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.text.one {
+    font-size: 1.85vw;
+    top: 54.5%;
+    color: #929292;
+    letter-spacing: 0.05vw;
+    white-space: nowrap;
+}
+.text.two {
+    font-size: 2.75vw;
+    top: 58.75%;
+    letter-spacing: 0.1vw;
+    color: #ffb4a8;
+}
+.text.three {
+    color: #ffb4a8;
+    font-size: 1.3vw;
+    top: 75%;
+}
+    /* SIDE TEXT */
+    .side {
+        font-size: 1.6vw;
+        letter-spacing: 0.5vw;
+        color: #acf0ea;
+        font-weight: 300;
+        position: absolute;
+    }
+    .side.one {
+        top: 1.5vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .side.two {
+        transform: rotate(90deg) translateX(-5%);
+        right: -3vw;
+        top: 50%;
+    }
+    .side.three {
+        top: 10vw;
+        font-size: 1.3vw;
+    }
+
+
+/* Camera Frame */
+#camera-wrapper, #text-wrapper, #background, #camera-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease-out;
+}
+#camera-wrapper {
+    width: 95vw;
+    height: 95vh;
+}
+/* Corner Pieces */
+.corner {
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    border-radius: 0.75vw;
+}
+.corner.one {
+    border-left: 1.75vw solid #b5f1ec;
+    border-top: 1.75vw solid #b5f1ec;
+}
+.corner.two {
+    right: 0;
+    border-right: 1.75vw solid #b5f1ec;
+    border-top: 1.75vw solid #b5f1ec;
+}
+.corner.three {
+    bottom: 0;
+    border-left: 1.75vw solid #b5f1ec;
+    border-bottom: 1.75vw solid #b5f1ec;
+}
+.corner.four {
+    bottom: 0;
+    right: 0;
+    border-right: 1.75vw solid #b5f1ec;
+    border-bottom: 1.75vw solid #b5f1ec;
+}
+/* Blinker */
+#circle {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    background-color: #b5f1ec;
+    border-radius: 50%;
+    top: 5vw;
+    left: 5vw;
+}
+/* Plus */
+#plus, #minus {
+    position: absolute;
+    color: black;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    border: 0.15vw solid #b5f1ec;
+    text-align: center;
+    display: table;
+    user-select: auto;
+    transition: 0.5s;
+    left: 0vw;
+}
+#plus {
+    bottom: 11vw;
+}
+#plus p, #minus p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.6vw;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    display: relative;
+    top: -0.25vw;
+    color: #b5f1ec;
+}
+#minus {
+    bottom: 8vw;
+}
+#date {
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6vw;
+    bottom: -0.2vw;
+    right: 8vw;
+    color: #b5f1ec;
+    letter-spacing: 0.3vw;
+    font-weight: 300;
+}
+/* Circle Lens */
+#outter-circle, #inner-circle {
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    z-index: -10;
+}
+#outter-circle {
+    top: 18%;
+    width: 17vw;
+    height: 17vw;
+    border: 1.5vw solid #b5f1ec;
+    transform: translateX(-47.5%);
+}
+#inner-circle {
+    width: 15.25vw;
+    height: 15.25vw;
+    border: 0.4vw solid #b5f1ec;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#shine {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #b5f1ec;
+    width: 2.75vw;
+    height: 2.75vw;
+    left: 5%;
+    top: 20%;
+}
+/* City Image */
+img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35vw;
+    opacity: 0.95;
+}
